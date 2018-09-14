@@ -1,21 +1,24 @@
-MIT License
+BY DOWNLOADING THE TERRESTRIAL ECOSYSTEM MODEL (TEM) PROGRAM YOU AGREE TO THE FOLLOWING TERMS OF USE:
 
-Copyright (c) 2018 MBL-TEM
+Copyright © 2018.  The Marine Biological Laboratory (“MBL”). All Rights Reserved.  
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Permission to use, copy, modify, and distribute this software, including all object code and source code, and any accompanying
+documentation (together the “Software Model”) for educational and not-for-profit research purposes, without fee and without a signed
+licensing agreement, is hereby granted, provided that the above copyright notice, this paragraph and the following three paragraphs
+appear in all copies, modifications, and distributions. For the avoidance of doubt, educational and not-for-profit research purposes
+excludes any service or part of selling a service that uses the Software Model. To obtain a commercial license for the Software Model,
+contact the Technology Commercialization team at the Polsky Center for Entrepreneurship and Innovation, University of Chicago, 1452 East
+53rd Street, 2nd floor, Chicago, IL 60615.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Created by David W. Kicklighter, A. David McGuire, James W. Raich, Yude Pan, Xiangming Xiao, Qianlai Zhuang, Hanqin Tian, Benjamin
+Felzer, Timothy W. Cronin, and Jerry Melillo at The Marine Biological Laboratory.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+The Software Model is copyrighted by MBL. The Software Model is supplied "as is", without any accompanying services from MBL. MBL does
+not warrant that the operation of the Software Model will be uninterrupted or error-free. The end-user understands that the Software
+Model was developed for research purposes and is advised not to rely exclusively on the Software Model for any reason.
+
+IN NO EVENT SHALL MBL BE LIABLE TO ANY PARTY FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, INCLUDING LOST
+PROFITS, ARISING OUT OF THE USE OF THE SOFTWARE MODEL, EVEN IF MBL HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. MBL SPECIFICALLY
+DISCLAIMS ANY WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. 
+THE SOFTWARE MODEL PROVIDED HEREUNDER IS PROVIDED "AS IS".  MBL HAS NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES,
+ENHANCEMENTS, OR MODIFICATIONS.
