@@ -1,0 +1,266 @@
+<?xml version = "1.0"?>
+
+<community type = "15"
+  description = "Tropical_Forests"
+  site = "Reserve_Ducke_Amazonas_Brazil"
+  longitude = "-60.0"
+  latitude = "-3.0"
+  developedBy = "David Kicklighter"
+  version = "6.0.6" 
+  updated = "20140523">
+
+  <siteECD> 
+    <vegca>21424.120</vegca>
+    <vegcb>7714.874</vegcb>
+    <strna>285.940</strna>
+    <strnb>103.112</strnb>
+    <stona>0.0695</stona>
+    <stonb>0.548</stonb>
+    <solca>2963.868</solca>
+    <solcb>4244.302</solcb>
+    <solna>181.722</solna>
+    <solnb>258.437</solnb>
+    <doccut>0.550000</doccut>
+    <doc1a>5.128</doc1a>
+    <doc1b>0.188</doc1b>
+    <doc2a>5.128</doc2a>
+    <doc2b>0.188</doc2b>
+    <doncut>0.550000</doncut>
+    <don1a>0.604</don1a>
+    <don1b>0.0216</don1b>    
+    <don2a>0.604</don2a>
+    <don2b>0.0216</don2b>    
+    <nh4a>-1.679</nh4a>
+    <nh4b>1.704</nh4b>
+    <no3cut>0.345</no3cut>
+    <no31a>0.425</no31a>
+    <no31b>0.371</no31b>
+    <no32a>-0.181</no32a>
+    <no32b>0.580</no32b>
+ 
+    <unleaf12>0.25</unleaf12>
+    <initleafmx>1.00</initleafmx>
+
+    <vegcmaxcut>0.644</vegcmaxcut>
+    <vegcmax1a>323.093</vegcmax1a>
+    <vegcmax1b>492.657</vegcmax1b>
+    <vegcmax2a>59.300</vegcmax2a>
+    <vegcmax2b>662.655</vegcmax2b>
+    <vegcfall>0.003889</vegcfall>
+    <vegrmmax>56.58</vegrmmax>
+    <vegrroot>0.300000</vegrroot>
+    
+    <microbekdcut>0.589</microbekdcut>   
+    <microbekd1a>0.00568</microbekd1a>
+    <microbekd1b>0.0117</microbekd1b>
+    <microbekd2a>-0.00875</microbekd2a>
+    <microbekd2b>0.0202</microbekd2b>
+    <microbepropftos>0.2000</microbepropftos>
+
+    <soilpropReactA>1.2025</soilpropReactA>
+    <soilpropReactB>0.2394</soilpropReactB>
+    <soilnonOMpar>0.825</soilnonOMpar>
+    <microbeDOCpar>0.002</microbeDOCpar>
+    <soillchDOMpar>2.000000</soillchDOMpar>
+
+    <vegnfixpara>0.00102</vegnfixpara>
+    <vegnfixparb>0.004366667</vegnfixparb>
+    <vegnfixadj>1.000000</vegnfixadj>
+    <vegnupnh4cut>0.55</vegnupnh4cut>
+    <vegnupnh41a>0.000000</vegnupnh41a>
+    <vegnupnh41b>0.000000</vegnupnh41b>
+    <vegnupnh42a>0.000000</vegnupnh42a>
+    <vegnupnh42b>0.000000</vegnupnh42b>
+    <vegnupno3cut>0.55</vegnupno3cut>
+    <vegnupno31a>-1653.203</vegnupno31a>
+    <vegnupno31b>2559.455</vegnupno31b>
+    <vegnupno32a>-1653.203</vegnupno32a>
+    <vegnupno32b>2559.455</vegnupno32b>
+    <vegnfall>0.0066666</vegnfall>
+    <veglcclnc>42.53</veglcclnc>
+
+    <microbenfixpar>0.65000</microbenfixpar>
+    <microbenh4immcut>0.462</microbenh4immcut>
+    <microbenh4imm1a>-32.678</microbenh4imm1a>
+    <microbenh4imm1b>21.425</microbenh4imm1b>
+    <microbenh4imm2a>-8.204</microbenh4imm2a>
+    <microbenh4imm2b>10.107</microbenh4imm2b>
+    <microbeammnpar>0.00000</microbeammnpar>
+    <microbentrfparcut>0.55</microbentrfparcut>
+    <microbentrfpar1a>-2.375</microbentrfpar1a>
+    <microbentrfpar1b>593.587</microbentrfpar1b>
+    <microbentrfpar2a>-2.375</microbentrfpar2a>
+    <microbentrfpar2b>593.587</microbentrfpar2b>
+    <microbeinitntrf>-100000.0</microbeinitntrf>
+    <microbeallntrf>-100000.0</microbeallntrf>
+    <microbetgmpar>0.02</microbetgmpar>
+
+    <soillchNO3parcut>0.658</soillchNO3parcut>
+    <soillchNO3par1a>1.268</soillchNO3par1a>
+    <soillchNO3par1b>4.055</soillchNO3par1b>
+    <soillchNO3par2a>2.400</soillchNO3par2a>
+    <soillchNO3par2b>3.310</soillchNO3par2b>
+    <microbeDONparcut>0.55</microbeDONparcut>
+    <microbeDONpar1a>0.000000</microbeDONpar1a>
+    <microbeDONpar1b>0.117667</microbeDONpar1b>
+    <microbeDONpar2a>0.000000</microbeDONpar2a>
+    <microbeDONpar2b>0.117667</microbeDONpar2b>
+    
+    <veginitcneven>41.27</veginitcneven>
+    <vegcnmin>0.00</vegcnmin>
+    <vegc2na>0.00</vegc2na>
+    <vegc2nb>75.00</vegc2nb>
+    <vegc2nmin>75.00</vegc2nmin>
+    <microbecnsoil>16.03</microbecnsoil>
+
+    <o3para>2.6</o3para>
+    <o3parb>1.0</o3parb>
+    <o3parc>0.0080782</o3parc>
+  </siteECD>
+
+  <vegECD>
+    <kc>400.00</kc>  
+    <ki>75.00</ki>
+    <gva>55.3933</gva>
+    <tmin>10.0</tmin>
+    <toptmin>21.9</toptmin>
+    <toptmax>32.7</toptmax>
+    <tmax>37.0</tmax>
+    <tref>25.0</tref>
+    <qref>2.07</qref>
+    <alpha>0.01</alpha>
+    <beta>-5.0</beta>
+    <gamma>55.0</gamma>
+    <kvnh4>0.0042</kvnh4>
+    <kvno3>0.0042</kvno3>
+    <labncon>0.20000</labncon>
+    <leafmxc>454.5</leafmxc>
+    <kleafc>1.6662</kleafc>
+    <sla>0.0077</sla>
+    <cov>-0.000227</cov>
+    <fpcmax>0.78798</fpcmax>
+    <proptrans>0.70</proptrans>
+  </vegECD>
+
+  <leafECD>
+    <minleaf>0.25</minleaf>  
+    <aleaf>0.44226</aleaf>
+    <bleaf>0.54255</bleaf>
+    <cleaf>0.07127</cleaf>
+  </leafECD>
+
+  <microbeECD>
+    <tref>25.0</tref>  
+    <qref>1.83</qref>  
+    <alpha>0.009</alpha>  
+    <beta>-10.0</beta>  
+    <gamma>100.0</gamma>  
+    <kn2>0.0042</kn2>
+    <moistmin>0.000000</moistmin>
+    <moistopt>0.500000</moistopt>
+    <moistmax>1.000000</moistmax>
+  </microbeECD>
+
+  <rootzECD>
+    <rootza>0.0000</rootza>
+    <rootzb>0.0000</rootzb>
+    <rootzc>8.0000</rootzc>
+    <minrootz>8.0000</minrootz>  
+  </rootzECD>
+
+  <snowPackECD>
+    <vegWindSp>0</vegWindSp> 
+    <gflux>0.040</gflux>
+    <cdsnow>0.200</cdsnow>
+    <DTDAY>0.50</DTDAY>  
+  </snowPackECD>
+
+  <soilLayerECD>
+    <THICK1>0.05</THICK1>
+    <DXA1>0.05</DXA1>
+    <DXB1>0.05</DXB1>
+    <MAT1>1</MAT1>
+    <DENSE1>1000.0</DENSE1>
+    <WATER1>0.640</WATER1>
+    <vcond1>1.0</vcond1>
+    <vsph1>1.0</vsph1>
+    <cond1>0.55</cond1>
+    <spht1>1500.0</spht1>
+    <condf1>0.36</condf1>
+    <sphf1>1500.0</sphf1>
+    <THICK2>1.00</THICK2>
+    <DXA2>0.20</DXA2>
+    <DXB2>0.20</DXB2>
+    <MAT2>2</MAT2>
+    <DENSE2>1000.0</DENSE2>
+    <WATER2>0.650</WATER2>
+    <vcond2>1.0</vcond2>
+    <vsph2>1.0</vsph2>
+    <cond2>0.70</cond2>
+    <spht2>2600.0</spht2>
+    <condf2>1.60</condf2>
+    <sphf2>2400.0</sphf2>
+    <THICK3>1.0</THICK3>
+    <DXA3>0.20</DXA3>
+    <DXB3>0.20</DXB3>
+    <MAT3>3</MAT3>
+    <DENSE3>1000.0</DENSE3>
+    <WATER3>0.430</WATER3>
+    <vcond3>1.0</vcond3>
+    <vsph3>1.0</vsph3>
+    <cond3>1.20</cond3>
+    <spht3>3100.0</spht3>
+    <condf3>2.10</condf3>
+    <sphf3>1700.0</sphf3>
+    <THICK4>5.0</THICK4>
+    <DXA4>0.50</DXA4>
+    <DXB4>0.50</DXB4>
+    <MAT4>3</MAT4>
+    <DENSE4>1000.0</DENSE4>
+    <WATER4>0.430</WATER4>
+    <vcond4>1.0</vcond4>
+    <vsph4>1.0</vsph4>
+    <cond4>1.20</cond4>
+    <spht4>3100.0</spht4>
+    <condf4>2.10</condf4>
+    <sphf4>1700.0</sphf4>
+    <THICK5>36.00</THICK5>
+    <DXA5>1.00</DXA5>
+    <DXB5>1.00</DXB5>
+    <MAT5>3</MAT5>
+    <DENSE5>1000.0</DENSE5>
+    <WATER5>0.430</WATER5>
+    <vcond5>1.0</vcond5>
+    <vsph5>1.0</vsph5>
+    <cond5>1.20</cond5>
+    <spht5>3100.0</spht5>
+    <condf5>2.10</condf5>
+    <sphf5>1700.0</sphf5>
+    <THICK6>-9999.999</THICK6>
+    <DXA6>0.0</DXA6>
+    <DXB6>0.0</DXB6>
+    <MAT6>0</MAT6>
+    <DENSE6>0.0</DENSE6>
+    <WATER6>0.0</WATER6>
+    <vcond6>-9999.999</vcond6>
+    <vsph6>-9999.999</vsph6>
+    <cond6>-9999.999</cond6>
+    <spht6>-9999.999</spht6>
+    <condf6>-9999.999</condf6>
+    <sphf6>-9999.999</sphf6>
+  </soilLayerECD>
+
+  <agECD>
+    <nvretconv>0.85</nvretconv>
+    <nsretconv>0.85</nsretconv>
+    <tillfactor>1.0000000</tillfactor>
+    <harvstC>0.40</harvstC> 
+    <harvstN>0.40</harvstN>
+    <residueC>0.000000</residueC> 
+    <residueN>0.000000</residueN>
+    <cropseedC>3.0</cropseedC>
+    <cropseedSTRN>0.09</cropseedSTRN>
+    <cropseedSTON>0.001</cropseedSTON>
+  </agECD>
+</community>
+
