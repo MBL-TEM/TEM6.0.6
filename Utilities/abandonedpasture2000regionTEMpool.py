@@ -11,12 +11,12 @@ abandonedpasture2000regionTEpool.py - Program identifies cohorts
 
 BY DOWNLOADING THIS PROGRAM YOU AGREE TO THE FOLLOWING TERMS OF USE:
 
-Copyright © 2019.  The Marine Biological Laboratory (“MBL”). All 
+Copyright 2019.  The Marine Biological Laboratory (MBL). All 
 Rights Reserved.  
 
 Permission to use, copy, modify, and distribute this software, 
 including all object code and source code, and any accompanying
-documentation (together the “Software”) for educational and 
+documentation (together the Software) for educational and 
 not-for-profit research purposes, without fee and without a signed
 licensing agreement, is hereby granted, provided that the above 
 copyright notice, this paragraph and the following three paragraphs
@@ -62,7 +62,7 @@ if __name__ == '__main__':
 #  osumfname = raw_input( "Enter output summary filename:\n" )
 #  osumfile = open( osumfname, 'w' )
 
-  osumfile = open( "abandonedPastures2000TEMpool1500_2100region.sum", 'w' )
+  osumfile = open( "abandonedPastures2000TEMpool2000_2100region.sum", 'w' )
 
 #  sfrstyear = raw_input( "Enter the initial year of the 5-year period to determine statistics:\n" )
 #  initYear = int( sfrstyear )
