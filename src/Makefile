@@ -56,6 +56,12 @@ xtem606cNoFert : ${CLMOBJ} ${LULCOBJ} ${TEMNOFERTOBJ} ${ELMNTNOFERTOBJ} ${OBJ} x
 xtem606cNoFert2000 : ${CLMOBJ} ${LULCOBJ} ${TEMNOFERT2000OBJ} ${ELMNTNOFERT2000OBJ} ${OBJ} xtem606cNoFert2000.cxx
 	${CXX} ${CFLAGS} -o xtem606cNoFert2000 ${CLMOBJ} ${LULCOBJ} ${TEMNOFERT2000OBJ} ${ELMNTNOFERT2000OBJ} ${OBJ} xtem606cNoFert2000.cxx
 
+diffmap606c : diffmap606c.cxx
+	${CXX} ${CFLAGS} -o diffmap606c  diffmap606c.cxx
+
+mapVegCoverage606c : tmaxcohortdat605.o lulcdat605.o mapVegCoverage606c.cxx
+	${CXX} ${CFLAGS} -o mapVegCoverage606c tmaxcohortdat605.o lulcdat605.o mapVegCoverage606c.cxx
+
 xtranalchrt606c : tbiome606.o tprocessXML606.o lulcdat605.o tclmdat606.o tmaxcohortdat605.o ttemdat606.o xtranalchrt606c.cxx
 	${CXX} ${CFLAGS} -o xtranalchrt606c tbiome606.o tprocessXML606.o lulcdat605.o tclmdat606.o tmaxcohortdat605.o ttemdat606.o xtranalchrt606c.cxx
 
