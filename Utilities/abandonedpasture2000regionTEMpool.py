@@ -2,11 +2,11 @@
 
 """
 #################################################################
-abandonedcrop2000regionTEMflux.py - Program identifies cohorts 
-  that are croplands during the year 2000 and then tracks these 
-  cohorts thru the 21st century to aggregate TEM estimated annual 
-  fluxes from these cohorts regardless if they remain the same 
-  land cover or not.
+abandonedpasture2000regionTEpool.py - Program identifies cohorts 
+  that are pastures during the year 2000 and then tracks these 
+  cohorts thru the 21st century to aggregate TEM estimated 
+  December pool sizes from these cohorts regardless if they remain 
+  the same land cover or not.
 #################################################################
 
 BY DOWNLOADING THIS PROGRAM YOU AGREE TO THE FOLLOWING TERMS OF USE:
@@ -55,14 +55,14 @@ if __name__ == '__main__':
 #  itemfname = raw_input( "Enter input filename of TEM results:\n" )
 #  itemfile = open( itemfname,  'r' )
 
-  itemfile = open( "TEMflux1500_2100.region",  'r' )
+  itemfile = open( "TEMpool1500_2100.region",  'r' )
 
   ilulcfile = open( "lulcchrt1500_2100.region", 'r')
   
 #  osumfname = raw_input( "Enter output summary filename:\n" )
 #  osumfile = open( osumfname, 'w' )
 
-  osumfile = open( "abandonedCrop2000TEMflux1500_2100region.sum", 'w' )
+  osumfile = open( "abandonedPastures2000TEMpool1500_2100region.sum", 'w' )
 
 #  sfrstyear = raw_input( "Enter the initial year of the 5-year period to determine statistics:\n" )
 #  initYear = int( sfrstyear )
@@ -89,79 +89,79 @@ if __name__ == '__main__':
   wetlandArea = {}
   desertArea = {}
 
-  cropFlux = {}
-  biofuelFlux = {}
-  pastureFlux = {}
-  youngForestFlux = {}
-  oldForestFlux = {}
-  allForestFlux = {}
-  grassFlux = {}
-  shrubFlux = {}
-  tundraFlux = {}
-  wetlandFlux = {}
-  desertFlux = {}
+  cropPool = {}
+  biofuelPool = {}
+  pasturePool = {}
+  youngForestPool = {}
+  oldForestPool = {}
+  allForestPool = {}
+  grassPool = {}
+  shrubPool = {}
+  tundraPool = {}
+  wetlandPool = {}
+  desertPool = {}
   
   tstchrt = []
   abandoned = {}
 
 # ###############################################################
 
-  def areaWeightedMeanFlux( dyr ):
+  def areaWeightedMeanPool( dyr ):
 
       if( cropArea[dyr] > 0 ):
-        cropFlux[dyr] /= cropArea[dyr]
+        cropPool[dyr] /= cropArea[dyr]
       else:
-        cropFlux[dyr] = 0.0
+        cropPool[dyr] = 0.0
   
       if( biofuelArea[dyr] > 0 ): 	
-        biofuelFlux[dyr] /=  biofuelArea[dyr]
+        biofuelPool[dyr] /=  biofuelArea[dyr]
       else:
-        biofuelFlux[dyr] = 0.0
+        biofuelPool[dyr] = 0.0
 
       if( pastureArea[dyr] > 0 ):
-        pastureFlux[dyr] /= pastureArea[dyr]
+        pasturePool[dyr] /= pastureArea[dyr]
       else:
-        pastureFlux[dyr] = 0.0
+        pasturePool[dyr] = 0.0
 
       if( youngForestArea[dyr] > 0 ):
-        youngForestFlux[dyr] /= youngForestArea[dyr]
+        youngForestPool[dyr] /= youngForestArea[dyr]
       else:
-        youngForestFlux[dyr] = 0.0
+        youngForestPool[dyr] = 0.0
 
       if( oldForestArea[dyr] > 0 ):
-        oldForestFlux[dyr]  /= oldForestArea[dyr]
+        oldForestPool[dyr]  /= oldForestArea[dyr]
       else:
-        oldForestFlux[dyr] = 0.0
+        oldForestPool[dyr] = 0.0
 
       if( pforsArea[dyr] > 0 ):
-        allForestFlux[dyr]  /= allForestArea[dyr]
+        allForestPool[dyr]  /= allForestArea[dyr]
       else:
-        allForestFlux[dyr] = 0.0
+        allForestPool[dyr] = 0.0
 
       if( grassArea[dyr] > 0 ):
-        grassFlux[dyr] /= grassArea[dyr]
+        grassPool[dyr] /= grassArea[dyr]
       else:
-        grassFlux[dyr] = 0.0
+        grassPool[dyr] = 0.0
 
       if( shrubArea[dyr] > 0 ):
-        shrubFlux[dyr] /= shrubArea[dyr]
+        shrubPool[dyr] /= shrubArea[dyr]
       else:
-        shrubFlux[dyr] = 0.0
+        shrubPool[dyr] = 0.0
 
       if( tundraArea[dyr] > 0 ):
-        tundraFlux[dyr] /= tundraArea[dyr]
+        tundraPool[dyr] /= tundraArea[dyr]
       else:
-        tundraFlux[dyr] = 0.0
+        tundraPool[dyr] = 0.0
 
       if( wetlandArea[dyr] > 0 ):
-        wetlandFlux[dyr] /= wetlandArea[dyr]
+        wetlandPool[dyr] /= wetlandArea[dyr]
       else:
-        wetlandFlux[dyr] = 0.0
+        wetlandPool[dyr] = 0.0
 
       if( desertArea[dyr] > 0 ):
-        desertFlux[dyr] /= desertArea[dyr] 
+        desertPool[dyr] /= desertArea[dyr] 
       else:
-        desertFlux[dyr] = 0.0
+        desertPool[dyr] = 0.0
   	
 # ##################################################################
 
@@ -181,18 +181,18 @@ if __name__ == '__main__':
 
 # ##################################################################
 
-  def initializeFlux( dyr ):
-        cropFlux[dyr] = 0.0
-        biofuelFlux[dyr] = 0.0
-        pastureFlux[dyr] = 0.0
-        youngForestFlux[dyr] = 0.0
-        oldForestFlux[dyr] = 0.0
-        allForestFlux[dyr] = 0.0
-        grassFlux[dyr] = 0.0
-        shrubFlux[dyr] = 0.0
-        tundraFlux[dyr] = 0.0
-        wetlandFlux[dyr] = 0.0
-        desertFlux[dyr] = 0.0
+  def initializePool( dyr ):
+        cropPool[dyr] = 0.0
+        biofuelPool[dyr] = 0.0
+        pasturePool[dyr] = 0.0
+        youngForestPool[dyr] = 0.0
+        oldForestPool[dyr] = 0.0
+        allForestPool[dyr] = 0.0
+        grassPool[dyr] = 0.0
+        shrubPool[dyr] = 0.0
+        tundraPool[dyr] = 0.0
+        wetlandPool[dyr] = 0.0
+        desertPool[dyr] = 0.0
 
 
 # ##################################################################
@@ -215,27 +215,27 @@ if __name__ == '__main__':
 
 # ##################################################################
 
-  def outputAggregatedFlux( dyr ):
+  def outputAggregatedPool( dyr ):
         osumfile.write( "%4d %10.4f %10.4f %10.4f %10.4f %10.4f %10.4f %10.4f %10.4f %10.4f %10.4f %10.4f\n" % 
                         (dyr,  
-                        (cropFlux[dyr] * 0.000001), 
-                        (biofuelFlux[dyr] * 0.000001), 
-                        (pastureFlux[dyr] * 0.000001), 
-                        (youngForestFlux[dyr] * 0.000001), 
-                        (oldForestFlux[dyr] * 0.000001), 
-                        (allForestFlux[dyr] * 0.000001), 
-                        (grassFlux[dyr] * 0.000001), 
-                        (shrubFlux[dyr] * 0.000001), 
-                        (tundraFlux[dyr] * 0.000001), 
-                        (wetlandFlux[dyr] * 0.000001), 
-                        (desertFlux[dyr] * 0.000001)) ) 
+                        (cropPool[dyr] * 0.000001), 
+                        (biofuelPool[dyr] * 0.000001), 
+                        (pasturePool[dyr] * 0.000001), 
+                        (youngForestPool[dyr] * 0.000001), 
+                        (oldForestPool[dyr] * 0.000001), 
+                        (allForestPool[dyr] * 0.000001), 
+                        (grassPool[dyr] * 0.000001), 
+                        (shrubPool[dyr] * 0.000001), 
+                        (tundraPool[dyr] * 0.000001), 
+                        (wetlandPool[dyr] * 0.000001), 
+                        (desertPool[dyr] * 0.000001)) ) 
 
 
 # ##################################################################
 
   for year in range( initYear, (finalYear+1) ):
     initializeArea( year )
-    initializeFlux( year )
+    initializePool( year )
 
   lagcol = -999.9
   lagrow = -999.9
@@ -260,7 +260,7 @@ if __name__ == '__main__':
 #    landarea = int( temfield[12] )
     chrtArea = int( temfield[13] )
     year = int( temfield[14] )
-    anntotal = float( temfield[15] )
+#    anntotal = float( temfield[15] )
 #    annmax = float( temfield[16] )
 #    annave = float( temfield[17] )
 #    annmin = float( temfield[18] )
@@ -275,7 +275,7 @@ if __name__ == '__main__':
 #    sep = float( temfield[27] )
 #    octbr = float( temfield[28] )
 #    nov = float( temfield[29] )
-#    dec = float( temfield[30] )
+    dec = float( temfield[30] )
 #    region = temfield[31][1:-1]
 
     if( year == startSpinupYear ):
@@ -343,13 +343,12 @@ if __name__ == '__main__':
         exit( -1 )  
 
 #   Replace missing value with zero
-      if( anntotal <= -999999.9 ): anntotal = 0.0
+      if( dec <= -999999.9 ): dec = 0.0
 
-#      print col, row, year
-      
-      
+      print col, row, year, icohrt
+
       if( year >= initYear and year <= finalYear ):
-        if( col != lagcol or row != lagrow ):
+        if( col != lagcol or row != lagrow):
           tstchrt = []
           mxcohrt = 0
           lagcol = col
@@ -357,7 +356,8 @@ if __name__ == '__main__':
 
         if( initYear == year ):
           mxcohrt += 1
-          if( 15 == chrtVeg ):
+
+          if( 33 == chrtVeg ):
             tstchrt.append( icohrt )
             abandoned[(col,row,icohrt)] = 1
           else:
@@ -371,22 +371,28 @@ if __name__ == '__main__':
             else:
               abandoned[(col,row,icohrt)] = 0
 
+#         if( year == (initYear+1)
+#             and lagcol == 5.0
+#             and lagrow == 61.0 ):
+#        print lagcol, lagrow, year, mxcohrt, tstchrt
+#           exit( -1 )
+
         if( 1 == abandoned[(col,row,icohrt)] ):
           if( 0 == chrtVeg ):
             desertArea[year] += chrtArea
-            desertFlux[year] += (float( chrtArea ) * anntotal)
+            desertPool[year] += (float( chrtArea ) * dec)
 
           if( 15 == chrtVeg ): 
             cropArea[year] += chrtArea
-            cropFlux[year] += (float( chrtArea ) * anntotal)
+            cropPool[year] += (float( chrtArea ) * dec)
 
           if( 16 == chrtVeg ): 
             biofuelArea[year] += chrtArea
-            biofuelFlux[year] += (float( chrtArea ) * anntotal)
+            biofuelPool[year] += (float( chrtArea ) * dec)
 
           if( 33 == chrtVeg ): 
             pastureArea[year] += chrtArea
-            pastureFlux[year] += (float( chrtArea ) * anntotal)
+            pasturePool[year] += (float( chrtArea ) * dec)
 
           if( 1 == chrtVeg 
               or 2 == chrtVeg 
@@ -400,29 +406,29 @@ if __name__ == '__main__':
               or 28 == chrtVeg):
 
             allForestArea[year] += chrtArea
-       	    allForestFlux[year] += (float( chrtArea ) * anntotal)
+       	    allForestPool[year] += (float( chrtArea ) * dec)
         
             if( 120 > standage ):
               youngForestArea[year] += chrtArea
-       	      youngForestFlux[year] += (float( chrtArea ) * anntotal)
+       	      youngForestPool[year] += (float( chrtArea ) * dec)
             else: 
               oldForestArea[year] += chrtArea
-              oldForestFlux[year] += (float( chrtArea ) * anntotal)
+              oldForestPool[year] += (float( chrtArea ) * dec)
 
           if( 9 == chrtVeg or 10 == chrtVeg ):
             shrubArea[year] += chrtArea
-            shrubFlux[year] += (float( chrtArea ) * anntotal)
+            shrubPool[year] += (float( chrtArea ) * dec)
       
           if( 11 == chrtVeg or 12 == chrtVeg ):
             tundraArea[year] += chrtArea
-            tundraFlux[year] += (float( chrtArea ) * anntotal)
+            tundraPool[year] += (float( chrtArea ) * dec)
       
           if( 13 == chrtVeg 
               or 14 == chrtVeg 
               or 27 == chrtVeg 
               or 29 == chrtVeg): 
             grassArea[year] += chrtArea
-            grassFlux[year] += (float( chrtArea ) * anntotal)
+            grassPool[year] += (float( chrtArea ) * dec)
 
           if( 17 == chrtVeg 
               or 18 == chrtVeg 
@@ -435,24 +441,27 @@ if __name__ == '__main__':
               or 25 == chrtVeg ): 
 
             wetlandArea[year] += chrtArea
-            wetlandFlux[year] += (float( chrtArea ) * anntotal)
+            wetlandPool[year] += (float( chrtArea ) * dec)
 
-          print col, row, year, mxcohrt, youngForestArea[year]
+#          print col, row, year, youngForestArea[year]
 
   itemfile.close()
   ilulcfile.close()
   
-  osumfile.write( "Year       Crop    Biofuel   Pasture  YoungFor  OldForest    AllForest     Grass     Shrub    Tundra   Wetland    Desert\n\n" ) 
+  osumfile.write( "Year       Crop    Biofuel   Pasture  YoungFor  OldForest AllForest     Grass     Shrub    Tundra   Wetland    Desert\n\n" ) 
+
+#  for year in range( initYear, (finalYear+1) ):
+#   areaWeightedMeanPool( year ):
 
   osumfile.write( "Area\n\n" )
 
   for year in range( initYear, (finalYear+1) ):
     outputAggregatedArea( year )
 
-  osumfile.write( "\n\nFlux\n\n" ) 
+  osumfile.write( "\n\nPool\n\n" ) 
 
   for year in range( initYear, (finalYear+1) ):
-    outputAggregatedFlux( year )
+    outputAggregatedPool( year )
 
   osumfile.close()
 

@@ -2,11 +2,11 @@
 
 """
 #################################################################
-crop2000regionTEpool.py - Program identifies cohorts that are 
-  croplands during the year 2000 and then tracks these cohorts
-  thru the 21st century to aggregate TEM estimated December pool 
-  sizes from these cohorts regardless if they remain the same land 
-  cover or not.
+abandonedcrop2000regionTEpool.py - Program identifies cohorts 
+  that are croplands during the year 2000 and then tracks these 
+  cohorts thru the 21st century to aggregate TEM estimated 
+  December pool sizes from these cohorts regardless if they remain 
+  the same land cover or not.
 #################################################################
 
 BY DOWNLOADING THIS PROGRAM YOU AGREE TO THE FOLLOWING TERMS OF USE:

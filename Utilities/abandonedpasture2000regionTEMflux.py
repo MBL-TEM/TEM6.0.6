@@ -2,8 +2,8 @@
 
 """
 #################################################################
-abandonedcrop2000regionTEMflux.py - Program identifies cohorts 
-  that are croplands during the year 2000 and then tracks these 
+abandonedpasture2000regionTEMflux.py - Program identifies cohorts 
+  that are pasture during the year 2000 and then tracks these 
   cohorts thru the 21st century to aggregate TEM estimated annual 
   fluxes from these cohorts regardless if they remain the same 
   land cover or not.
@@ -62,7 +62,7 @@ if __name__ == '__main__':
 #  osumfname = raw_input( "Enter output summary filename:\n" )
 #  osumfile = open( osumfname, 'w' )
 
-  osumfile = open( "abandonedCrop2000TEMflux1500_2100region.sum", 'w' )
+  osumfile = open( "abandonedPasture2000TEMflux1500_2100region.sum", 'w' )
 
 #  sfrstyear = raw_input( "Enter the initial year of the 5-year period to determine statistics:\n" )
 #  initYear = int( sfrstyear )
@@ -357,7 +357,7 @@ if __name__ == '__main__':
 
         if( initYear == year ):
           mxcohrt += 1
-          if( 15 == chrtVeg ):
+          if( 33 == chrtVeg ):
             tstchrt.append( icohrt )
             abandoned[(col,row,icohrt)] = 1
           else:
