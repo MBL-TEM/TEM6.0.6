@@ -11,12 +11,12 @@ abandonedcrop2000regionTEMflux.py - Program identifies cohorts
 
 BY DOWNLOADING THIS PROGRAM YOU AGREE TO THE FOLLOWING TERMS OF USE:
 
-Copyright © 2019.  The Marine Biological Laboratory (“MBL”). All 
+Copyright 2019.  The Marine Biological Laboratory (MBL). All 
 Rights Reserved.  
 
 Permission to use, copy, modify, and distribute this software, 
 including all object code and source code, and any accompanying
-documentation (together the “Software”) for educational and 
+documentation (together the Software) for educational and 
 not-for-profit research purposes, without fee and without a signed
 licensing agreement, is hereby granted, provided that the above 
 copyright notice, this paragraph and the following three paragraphs
