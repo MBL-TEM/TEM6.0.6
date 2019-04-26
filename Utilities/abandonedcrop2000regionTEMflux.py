@@ -62,7 +62,7 @@ if __name__ == '__main__':
 #  osumfname = raw_input( "Enter output summary filename:\n" )
 #  osumfile = open( osumfname, 'w' )
 
-  osumfile = open( "abandonedCrop2000TEMflux1500_2100region.sum", 'w' )
+  osumfile = open( "abandonedCrop2000TEMflux2000_2100region.sum", 'w' )
 
 #  sfrstyear = raw_input( "Enter the initial year of the 5-year period to determine statistics:\n" )
 #  initYear = int( sfrstyear )
