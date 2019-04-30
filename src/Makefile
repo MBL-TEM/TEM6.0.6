@@ -56,6 +56,9 @@ xtem606cNoFert : ${CLMOBJ} ${LULCOBJ} ${TEMNOFERTOBJ} ${ELMNTNOFERTOBJ} ${OBJ} x
 xtem606cNoFert2000 : ${CLMOBJ} ${LULCOBJ} ${TEMNOFERT2000OBJ} ${ELMNTNOFERT2000OBJ} ${OBJ} xtem606cNoFert2000.cxx
 	${CXX} ${CFLAGS} -o xtem606cNoFert2000 ${CLMOBJ} ${LULCOBJ} ${TEMNOFERT2000OBJ} ${ELMNTNOFERT2000OBJ} ${OBJ} xtem606cNoFert2000.cxx
 
+addmap606c : addmap606c.cxx
+	${CXX} ${CFLAGS} -o addmap606c  addmap606c.cxx
+
 diffmap606c : diffmap606c.cxx
 	${CXX} ${CFLAGS} -o diffmap606c  diffmap606c.cxx
 
