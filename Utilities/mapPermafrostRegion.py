@@ -97,7 +97,7 @@ if __name__ == '__main__':
     grdarea = float( field[12] )
     cohrtarea = float( field[13] )
     year = int( field[14] )
-    testvar = float( field[17] )
+    testvar = float( field[16] )
 
     if( testyr == year and testvar > MISSING ):
       if( sumvar[(ilon, ilat)] == MISSING ):
