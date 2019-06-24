@@ -3,7 +3,7 @@
 TTEM606C.CPP - Terrestrial Ecosystem Model Version 6.0
 ****************************************************************
 
-Copyright © 2018.  The Marine Biological Laboratory. All Rights 
+Copyright Â© 2018.  The Marine Biological Laboratory. All Rights 
 Reserved.  
 
 Full license notice can be found in the LICENSE file at 
@@ -324,7 +324,7 @@ TTEM60::TTEM60() : ProcessXML60(), predstr( NUMTEM )
   predstr.at( I_LTRFALN ) = "LTRFALN";
 
   // nitrogen in decomposition of organic matter
-  predstr.at( I_NDCMP ) = "CDECOMP";   
+  predstr.at( I_NDCMP ) = "NDECOMP";   
 
   // dissolved organic nitrogen production
   predstr.at( I_DONP ) = "DONPROD";
@@ -505,7 +505,7 @@ TTEM60::TTEM60() : ProcessXML60(), predstr( NUMTEM )
   // Total nitrogen losses from ecosystems
   predstr.at( I_NLST ) = "NLOST";
 
-  // net terrestrial carbon balance
+  // net terrestrial nitrogen balance
   predstr.at( I_NENB ) = "NENB";
 
 
@@ -583,7 +583,7 @@ TTEM60::TTEM60() : ProcessXML60(), predstr( NUMTEM )
   // carbon associated with slash left after conversion
   predstr.at( I_SLASHC ) = "SLASHC";
 
-  // carbon flux from ecosystem (NEP+CONVERTC)
+  // carbon flux from ecosystem (NEP - CONVERTC)
   predstr.at( I_CFLX ) = "CFLUX";
 
 
