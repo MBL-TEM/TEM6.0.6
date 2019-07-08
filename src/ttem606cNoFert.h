@@ -5,7 +5,7 @@ TTEM606CNOFERT.H - Terrestrial Ecosystem Model Version 6.0.6
   croplands.
 ****************************************************************
 
-Copyright © 2018.  The Marine Biological Laboratory. All Rights 
+Copyright Â© 2018.  The Marine Biological Laboratory. All Rights 
 Reserved.  
 
 Full license notice can be found in the LICENSE file at 
@@ -265,13 +265,7 @@ class TTEM60 : public ProcessXML60
        I_THAWEND,     I_THAWPCT,    I_ACTLAYER,
 
        I_TOTNDEP,     I_NH4DEP,     I_NO3DEP,   
-       I_FIRENTOTDEP, I_FIRENH4DEP, I_FIRENO3DEP,
-
-       I_CO2G,        I_CO2W,       I_HCO3,       I_RHCO3,    I_ALK, 
-       I_CO2DISS,     I_LCHCO2,     I_HCO3P,      I_RHCO3P,   I_LCHHCO3,  
-       I_LCHALK, 
-       
-       I_ISOPREN,  I_TERPEN,   I_ORVOC,    I_OVOC,     I_VOC
+       I_FIRENTOTDEP, I_FIRENH4DEP, I_FIRENO3DEP
      };
 
 //     #ifdef CALIBRATE_TEM    
