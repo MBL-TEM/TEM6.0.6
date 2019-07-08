@@ -5,7 +5,7 @@ TELM606CNOFERT2000.CPP - Runs TEM for a single grid cell. Nitrogen
   2000, but then no fertilizers are assumed to be applied to 
   croplands after year 2000,
 
-Copyright © 2018.  The Marine Biological Laboratory. All Rights 
+Copyright Â© 2018.  The Marine Biological Laboratory. All Rights 
 Reserved.  
 
 Full license notice can be found in the LICENSE file at 
@@ -4785,15 +4785,7 @@ void TEMelmnt60::temwritepred( ofstream fout[NUMTEM],
       }
     }
 
-    else if( predname.at( i ) == tem.predstr.at( tem.I_LCHCO2 ) )
-    {
-      for( dm = 0; dm < CYCLE; ++dm )
-      {
-        tempred.mon[dm] = output[tem.I_LCHCO2][dm];
-      }
-    }
-
-     else if( predname.at( i ) == tem.predstr.at( tem.I_NECB ) )
+    else if( predname.at( i ) == tem.predstr.at( tem.I_NECB ) )
     {
       for( dm = 0; dm < CYCLE; ++dm )
       {
