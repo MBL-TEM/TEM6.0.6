@@ -4,7 +4,7 @@ TELM606CCONSTACTLAYER.CPP - Runs TEM for a single grid cell.  The
   seasonal active layer in permafrost regions is assumed to be 
   constant after year 2000. 
 
-Copyright © 2018.  The Marine Biological Laboratory. All Rights 
+Copyright Â© 2018.  The Marine Biological Laboratory. All Rights 
 Reserved.  
 
 Full license notice can be found in the LICENSE file at 
@@ -4780,14 +4780,6 @@ void TEMelmnt60::temwritepred( ofstream fout[NUMTEM],
       for( dm = 0; dm < CYCLE; ++dm )
       {
         tempred.mon[dm] = output[tem.I_DOCP][dm];
-      }
-    }
-
-    else if( predname.at( i ) == tem.predstr.at( tem.I_LCHDOC ) )
-    {
-      for( dm = 0; dm < CYCLE; ++dm )
-      {
-        tempred.mon[dm] = output[tem.I_LCHDOC][dm];
       }
     }
 
